@@ -1,0 +1,53 @@
+---
+title: "EDS 123: An optional course template"
+description: "Some byline about this class"
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(kableExtra)
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+# Learn more about publishing to GitHub Pages at:
+# https://rstudio.github.io/distill/publish_website.html#github-pages
+
+```
+
+## MEDS distill template
+
+This is an optional [distill](https://rstudio.github.io/distill/) template for MEDS teachers who want to create a website for their courses. It is not required. 
+
+A distill website allows you to create a streamlined, robust site with minimal infrastructure working just in R Markdown. 
+
+## Adding new pages
+
+New pages can be added by creating a new .Rmd for each new page on your site in the project root. The html will be rendered and saved in the /docs folder when you **Build website**. Then, add the new page information (text and html) to the navbar section of the _site.yml file.
+
+### Don't work in the /docs folder
+
+All files you want added to your site should be automatically sent to /docs when you build the site. Manually update things in the /docs folder at your own risk. 
+
+## Some aesthetics for this template
+
+### Tables 
+
+With `kable()`:
+
+```{r}
+head(mtcars) %>% 
+  kable() %>% 
+  kable_styling(full_width = FALSE)
+```
+
+### Code
+
+```{r, echo = TRUE, eval = FALSE}
+ggplot(data = mtcars, aes(x = wt, y = mpg)) +
+  geom_point() +
+  labs(x = "Car weight",
+       y = "Gas mileage")
+```
+

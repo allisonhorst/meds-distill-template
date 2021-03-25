@@ -1,0 +1,21 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this site",
+      "description": "Some additional details about the website",
+      "author": [],
+      "contents": "\nLevel 2 header\nLevel 3 header\n\n\n\n\n\n\n",
+      "last_modified": "2021-03-24T23:00:07-07:00"
+    },
+    {
+      "path": "index.html",
+      "title": "EDS 123: An optional course template",
+      "description": "Some byline about this class",
+      "author": [],
+      "contents": "\nMEDS distill template\nThis is an optional distill template for MEDS teachers who want to create a website for their courses. It is not required.\nA distill website allows you to create a streamlined, robust site with minimal infrastructure working just in R Markdown.\nAdding new pages\nNew pages can be added by creating a new .Rmd for each new page on your site in the project root. The html will be rendered and saved in the /docs folder when you Build website. Then, add the new page information (text and html) to the navbar section of the _site.yml file.\nDon’t work in the /docs folder\nAll files you want added to your site should be automatically sent to /docs when you build the site. Manually update things in the /docs folder at your own risk.\nSome aesthetics for this template\nTables\nWith kable():\n\n\n\n\nmpg\n\n\ncyl\n\n\ndisp\n\n\nhp\n\n\ndrat\n\n\nwt\n\n\nqsec\n\n\nvs\n\n\nam\n\n\ngear\n\n\ncarb\n\n\nMazda RX4\n\n\n21.0\n\n\n6\n\n\n160\n\n\n110\n\n\n3.90\n\n\n2.620\n\n\n16.46\n\n\n0\n\n\n1\n\n\n4\n\n\n4\n\n\nMazda RX4 Wag\n\n\n21.0\n\n\n6\n\n\n160\n\n\n110\n\n\n3.90\n\n\n2.875\n\n\n17.02\n\n\n0\n\n\n1\n\n\n4\n\n\n4\n\n\nDatsun 710\n\n\n22.8\n\n\n4\n\n\n108\n\n\n93\n\n\n3.85\n\n\n2.320\n\n\n18.61\n\n\n1\n\n\n1\n\n\n4\n\n\n1\n\n\nHornet 4 Drive\n\n\n21.4\n\n\n6\n\n\n258\n\n\n110\n\n\n3.08\n\n\n3.215\n\n\n19.44\n\n\n1\n\n\n0\n\n\n3\n\n\n1\n\n\nHornet Sportabout\n\n\n18.7\n\n\n8\n\n\n360\n\n\n175\n\n\n3.15\n\n\n3.440\n\n\n17.02\n\n\n0\n\n\n0\n\n\n3\n\n\n2\n\n\nValiant\n\n\n18.1\n\n\n6\n\n\n225\n\n\n105\n\n\n2.76\n\n\n3.460\n\n\n20.22\n\n\n1\n\n\n0\n\n\n3\n\n\n1\n\n\nCode\n\n\nggplot(data = mtcars, aes(x = wt, y = mpg)) +\n  geom_point() +\n  labs(x = \"Car weight\",\n       y = \"Gas mileage\")\n\n\n\n\n\n\n",
+      "last_modified": "2021-03-24T23:00:08-07:00"
+    }
+  ],
+  "collections": []
+}

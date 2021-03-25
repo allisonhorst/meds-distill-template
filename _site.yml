@@ -1,0 +1,18 @@
+name: "meds-distill-template"
+title: "EDS 123"
+description: |
+  MEDS Courses distill template
+output_dir: "docs"
+navbar:
+  right:
+    - text: "HOME"
+      href: index.html
+    - text: "ABOUT"
+      href: about.html
+output:
+  distill::distill_article:
+    toc: false
+    toc_float: false
+theme: theme.css
+
+# To remove table of contents on each page, set toc: and toc_float: lines to FALSE

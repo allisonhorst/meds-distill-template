@@ -1,0 +1,20 @@
+---
+title: "About this site"
+description: |
+  Some additional details about the website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+```
+
+## Level 2 header
+
+### Level 3 header
+
+```{r}
+ggplot(data = mtcars, aes(x = wt, y = mpg)) +
+  geom_point()
+```
+

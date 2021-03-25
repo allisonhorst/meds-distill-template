@@ -1,0 +1,134 @@
+
+/* base variables */
+
+/* Edit the CSS properties in this file to create a custom
+   Distill theme. Only edit values in the right column
+   for each row; values shown are the CSS defaults.
+   To return any property to the default,
+   you may set its value to: unset
+   All rows must end with a semi-colon.                      */
+
+/* Optional: embed custom fonts here with `@import`          */
+/* This must remain at the top of this file.                 */
+
+/* Font options: Aleo (serif), Lexend (sans-serif) */
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400&family=Lexend&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
+
+/* Code font options */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+
+html {
+  /*-- Main font sizes --*/
+  --title-size:      40px;
+  --title-weight:    400;
+  --body-size:       1.06rem;
+  --code-size:       14px;
+  --aside-size:      12px;
+  --fig-cap-size:    13px;
+  /*-- Main font colors --*/
+  --title-color:     #003660;
+  --title-weight:    550;
+  --header-color:    rgba(4, 124, 145, 1);
+  --body-color:      rgba(0, 0, 0, 0.8);
+  --aside-color:     rgba(0, 0, 0, 0.6);
+  --fig-cap-color:   rgba(0, 0, 0, 0.6);
+  /*-- Specify custom fonts ~~~ must be imported above   --*/
+  --heading-font:    Aleo;
+  --mono-font:       Roboto Mono;
+  --body-font:       Nunito Sans;
+  --navbar-font:     Nunito Sans;  /* websites + blogs only */
+}
+
+/*-- ARTICLE METADATA --*/
+d-byline {
+  --heading-size:    0.6rem;
+  --heading-color:   rgba(0, 0, 0, 0.5);
+  --body-size:       0.8rem;
+  --body-color:      rgba(0, 0, 0, 0.8);
+}
+
+/*-- ARTICLE TABLE OF CONTENTS --*/
+.d-contents {
+  --heading-size:    18px;
+  --contents-size:   13px;
+}
+
+/*-- ARTICLE APPENDIX --*/
+d-appendix {
+  --heading-size:    15px;
+  --heading-color:   rgba(0, 0, 0, 0.65);
+  --text-size:       0.8em;
+  --text-color:      rgba(0, 0, 0, 0.5);
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+/* These properties only apply to Distill sites and blogs  */
+
+.distill-site-header {
+  --title-size:       18px;
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #003660;
+}
+
+.distill-site-footer {
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #003660;
+}
+
+/*-- Additional custom styles --*/
+/* Add any additional CSS rules below                      */
+
+d-article h1 {
+    grid-column: text;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+}
+
+d-article h2 {
+    grid-column: text;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+}
+
+d-article h3 {
+    grid-column: text;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+}
+
+a.title {
+  font-weight: 600;
+}
+
+d-title h1 {
+    grid-column: text;
+    font-size: 45px;
+    font-weight: 550;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+}
+
+d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article h6 {
+    color: rgba(4, 124, 145, 0.8);
+}
+
+/* Font for tables (can update here or individually) */
+table {
+  font-family: Nunito Sans;
+}
+
+code {
+  font-family: Roboto Mono;
+}
