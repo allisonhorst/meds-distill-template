@@ -5,14 +5,14 @@ description: |
 output_dir: "docs"
 navbar:
   right:
-    - text: "HOME"
+    - text: "Home"
       href: index.html
-    - text: "ABOUT"
-      href: about.html
+    - text: "Weekly materials"
+      href: weekly.html
 output:
   distill::distill_article:
-    toc: false
-    toc_float: false
+    toc: true
+    toc_float: true
 theme: theme.css
 
 # To remove table of contents on each page, set toc: and toc_float: lines to FALSE

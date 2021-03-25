@@ -87,27 +87,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>EDS 123: EDS 123: An optional course template</title>
 
-  <meta property="description" itemprop="description" content="Some byline about this class"/>
+  <meta property="description" itemprop="description" content="A minimal website skeleton and theme"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="EDS 123: EDS 123: An optional course template"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Some byline about this class"/>
+  <meta property="og:description" content="A minimal website skeleton and theme"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="EDS 123"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="EDS 123: EDS 123: An optional course template"/>
-  <meta property="twitter:description" content="Some byline about this class"/>
+  <meta property="twitter:description" content="A minimal website skeleton and theme"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["EDS 123: An optional course template"]},{"type":"character","attributes":{},"value":["Some byline about this class"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["EDS 123: An optional course template"]},{"type":"character","attributes":{},"value":["A minimal website skeleton and theme"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2178,9 +2178,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* These properties only apply to Distill sites and blogs  */
 
   .distill-site-header {
-    --title-size:       18px;
+    --title-size:       20px;
     --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        15px;
+    --text-size:        16px;
     --hover-color:      white;
     --bkgd-color:       #003660;
   }
@@ -2195,17 +2195,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below                      */
 
-  d-article h1 {
-      grid-column: text;
-      font-size: 35px;
-      font-weight: 400;
-      line-height: 1.1em;
-      margin: 0 0 0.5rem;
-  }
-
   d-article h2 {
       grid-column: text;
-      font-size: 30px;
+      font-size: 32px;
       font-weight: 400;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
@@ -2213,7 +2205,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   d-article h3 {
       grid-column: text;
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 400;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
@@ -2231,6 +2223,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       margin: 0 0 0.5rem;
   }
 
+  /* Set colors for headers */
   d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article h6 {
       color: rgba(4, 124, 145, 0.8);
   }
@@ -2242,6 +2235,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   code {
     font-family: Roboto Mono;
+  }
+
+  .distill-site-header a, .distill-site-header .title {
+      display: inline-block;
+      text-align: left;
+      padding: 14px 14px 14px 14px;
   }</style>
   <style type="text/css">
   /* base style */
@@ -2399,8 +2398,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }</style>
   <!--/radix_placeholder_distill-->
   <script src="site_libs/header-attrs-2.6.6/header-attrs.js"></script>
-  <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-  <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2420,7 +2417,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"EDS 123: An optional course template","description":"Some byline about this class","authors":[]}
+{"title":"EDS 123: An optional course template","description":"A minimal website skeleton and theme","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2431,8 +2428,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="index.html" class="title">EDS 123</a>
 </div>
 <div class="nav-right">
-<a href="index.html">HOME</a>
-<a href="about.html">ABOUT</a>
+<a href="index.html">Home</a>
+<a href="weekly.html">Weekly materials</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2445,304 +2442,113 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>EDS 123: An optional course template</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p>Some byline about this class</p>
+<p>A minimal website skeleton and theme</p>
 </div>
 
 
 <div class="d-article">
-<h2 id="meds-distill-template">MEDS distill template</h2>
-<p>This is an optional <a href="https://rstudio.github.io/distill/">distill</a> template for MEDS teachers who want to create a website for their courses. It is not required.</p>
-<p>A distill website allows you to create a streamlined, robust site with minimal infrastructure working just in R Markdown.</p>
-<h2 id="adding-new-pages">Adding new pages</h2>
-<p>New pages can be added by creating a new .Rmd for each new page on your site in the project root. The html will be rendered and saved in the /docs folder when you <strong>Build website</strong>. Then, add the new page information (text and html) to the navbar section of the _site.yml file.</p>
-<h3 id="dont-work-in-the-docs-folder">Don’t work in the /docs folder</h3>
-<p>All files you want added to your site should be automatically sent to /docs when you build the site. Manually update things in the /docs folder at your own risk.</p>
-<h2 id="some-aesthetics-for-this-template">Some aesthetics for this template</h2>
-<h3 id="tables">Tables</h3>
-<p>With <code>kable()</code>:</p>
-<div class="layout-chunk" data-layout="l-body">
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#course-description">Course description</a></li>
+<li><a href="#teaching-team">Teaching team</a></li>
+<li><a href="#important-links">Important links</a></li>
+<li><a href="#weekly-course-schedule">Weekly course schedule</a></li>
+<li><a href="#learning-objectives">Learning objectives</a></li>
+<li><a href="#tentative-topics">Tentative topics</a></li>
+<li><a href="#course-requirements">Course requirements</a>
+<ul>
+<li><a href="#computing">Computing</a></li>
+<li><a href="#textbook">Textbook</a></li>
+<li><a href="#other-requirements">Other requirements</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+<h2 id="course-description">Course description</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h2 id="teaching-team">Teaching team</h2>
+<p><strong>Instructor:</strong> Mike Wazowski (wazowski@monstersinc.org)</p>
+<ul>
+<li><strong>Office:</strong> Closet 100</li>
+<li><strong>Office hours:</strong> Friday 9pm - 11pm</li>
+</ul>
+<p><strong>Teaching assistant:</strong> Boo (boo@monstersinc.org)</p>
+<ul>
+<li><strong>Office:</strong> Boo’s Room</li>
+<li><strong>Office hours:</strong> Saturday 7am - 8am</li>
+</ul>
+<h2 id="important-links">Important links</h2>
+<ul>
+<li><p>Link to full course syllabus</p></li>
+<li><p>Link to Code of Conduct</p></li>
+</ul>
+<h2 id="weekly-course-schedule">Weekly course schedule</h2>
+<ul>
+<li><strong>Lectures:</strong> MW 8am - 9:15am (Warehouse Room 1)</li>
+<li><strong>Labs:</strong> Th 10am - 12pm (Warehouse Room 2)</li>
+</ul>
+<h2 id="learning-objectives">Learning objectives</h2>
+<p>Condimentum id venenatis a condimentum. Ultricies mi quis hendrerit dolor magna eget est. Turpis egestas maecenas pharetra convallis. Sem nulla pharetra diam sit amet. Diam volutpat commodo sed egestas egestas fringilla. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Ornare massa eget egestas purus viverra accumsan in.</p>
+<ul>
+<li>Vulputate eu scelerisque felis imperdiet proin.</li>
+<li>Euismod nisi porta lorem mollis aliquam.</li>
+<li>Urna molestie at elementum eu facilisis sed odio morbi quis.</li>
+<li>Convallis a cras semper auctor neque. Semper quis lectus nulla at volutpat diam ut venenatis tellus.</li>
+</ul>
+<h2 id="tentative-topics">Tentative topics</h2>
+<table>
 <thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:right;">
-mpg
-</th>
-<th style="text-align:right;">
-cyl
-</th>
-<th style="text-align:right;">
-disp
-</th>
-<th style="text-align:right;">
-hp
-</th>
-<th style="text-align:right;">
-drat
-</th>
-<th style="text-align:right;">
-wt
-</th>
-<th style="text-align:right;">
-qsec
-</th>
-<th style="text-align:right;">
-vs
-</th>
-<th style="text-align:right;">
-am
-</th>
-<th style="text-align:right;">
-gear
-</th>
-<th style="text-align:right;">
-carb
-</th>
+<tr class="header">
+<th>Week</th>
+<th>Lecture topics</th>
+<th>Lab topics</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-Mazda RX4
-</td>
-<td style="text-align:right;">
-21.0
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:right;">
-160
-</td>
-<td style="text-align:right;">
-110
-</td>
-<td style="text-align:right;">
-3.90
-</td>
-<td style="text-align:right;">
-2.620
-</td>
-<td style="text-align:right;">
-16.46
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-4
-</td>
+<tr class="odd">
+<td>1</td>
+<td>Topics</td>
+<td>Topics</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Mazda RX4 Wag
-</td>
-<td style="text-align:right;">
-21.0
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:right;">
-160
-</td>
-<td style="text-align:right;">
-110
-</td>
-<td style="text-align:right;">
-3.90
-</td>
-<td style="text-align:right;">
-2.875
-</td>
-<td style="text-align:right;">
-17.02
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-4
-</td>
+<tr class="even">
+<td>2</td>
+<td>Topics</td>
+<td>Topics</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Datsun 710
-</td>
-<td style="text-align:right;">
-22.8
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-108
-</td>
-<td style="text-align:right;">
-93
-</td>
-<td style="text-align:right;">
-3.85
-</td>
-<td style="text-align:right;">
-2.320
-</td>
-<td style="text-align:right;">
-18.61
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-1
-</td>
+<tr class="odd">
+<td>3</td>
+<td>Topics</td>
+<td>Topics</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Hornet 4 Drive
-</td>
-<td style="text-align:right;">
-21.4
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:right;">
-258
-</td>
-<td style="text-align:right;">
-110
-</td>
-<td style="text-align:right;">
-3.08
-</td>
-<td style="text-align:right;">
-3.215
-</td>
-<td style="text-align:right;">
-19.44
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-1
-</td>
+<tr class="even">
+<td>4</td>
+<td>Topics</td>
+<td>Topics</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Hornet Sportabout
-</td>
-<td style="text-align:right;">
-18.7
-</td>
-<td style="text-align:right;">
-8
-</td>
-<td style="text-align:right;">
-360
-</td>
-<td style="text-align:right;">
-175
-</td>
-<td style="text-align:right;">
-3.15
-</td>
-<td style="text-align:right;">
-3.440
-</td>
-<td style="text-align:right;">
-17.02
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-2
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Valiant
-</td>
-<td style="text-align:right;">
-18.1
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:right;">
-225
-</td>
-<td style="text-align:right;">
-105
-</td>
-<td style="text-align:right;">
-2.76
-</td>
-<td style="text-align:right;">
-3.460
-</td>
-<td style="text-align:right;">
-20.22
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-1
-</td>
+<tr class="odd">
+<td>5</td>
+<td>Topics</td>
+<td>Topics</td>
 </tr>
 </tbody>
 </table>
-</div>
-<h3 id="code">Code</h3>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>ggplot</span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>mtcars</span>, <span class='fu'>aes</span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>wt</span>, y <span class='op'>=</span> <span class='va'>mpg</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>geom_point</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>labs</span><span class='op'>(</span>x <span class='op'>=</span> <span class='st'>"Car weight"</span>,
-       y <span class='op'>=</span> <span class='st'>"Gas mileage"</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
+<h2 id="course-requirements">Course requirements</h2>
+<h3 id="computing">Computing</h3>
+<ul>
+<li><p>Minimum device requirements</p></li>
+<li><p>Software requirements</p></li>
+<li><p>Account requirements</p></li>
+</ul>
+<h3 id="textbook">Textbook</h3>
+<ul>
+<li>Required textbook / information</li>
+</ul>
+<h3 id="other-requirements">Other requirements</h3>
+<ul>
+<li>Anything else</li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

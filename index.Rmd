@@ -1,6 +1,6 @@
 ---
 title: "EDS 123: An optional course template"
-description: "Some byline about this class"
+description: "A minimal website skeleton and theme"
 site: distill::distill_website
 ---
 
@@ -16,38 +16,66 @@ library(kableExtra)
 
 ```
 
-## MEDS distill template
+## Course description
 
-This is an optional [distill](https://rstudio.github.io/distill/) template for MEDS teachers who want to create a website for their courses. It is not required. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-A distill website allows you to create a streamlined, robust site with minimal infrastructure working just in R Markdown. 
+## Teaching team
 
-## Adding new pages
+**Instructor:** Mike Wazowski (wazowski\@monstersinc.org)
 
-New pages can be added by creating a new .Rmd for each new page on your site in the project root. The html will be rendered and saved in the /docs folder when you **Build website**. Then, add the new page information (text and html) to the navbar section of the _site.yml file.
+-   **Office:** Closet 100
+-   **Office hours:** Friday 9pm - 11pm
 
-### Don't work in the /docs folder
+**Teaching assistant:** Boo (boo\@monstersinc.org)
 
-All files you want added to your site should be automatically sent to /docs when you build the site. Manually update things in the /docs folder at your own risk. 
+-   **Office:** Boo's Room
+-   **Office hours:** Saturday 7am - 8am
 
-## Some aesthetics for this template
+## Important links
 
-### Tables 
+-   Link to full course syllabus
 
-With `kable()`:
+-   Link to Code of Conduct
 
-```{r}
-head(mtcars) %>% 
-  kable() %>% 
-  kable_styling(full_width = FALSE)
-```
+## Weekly course schedule
 
-### Code
+-   **Lectures:** MW 8am - 9:15am (Warehouse Room 1)
+-   **Labs:** Th 10am - 12pm (Warehouse Room 2)
 
-```{r, echo = TRUE, eval = FALSE}
-ggplot(data = mtcars, aes(x = wt, y = mpg)) +
-  geom_point() +
-  labs(x = "Car weight",
-       y = "Gas mileage")
-```
+## Learning objectives
 
+Condimentum id venenatis a condimentum. Ultricies mi quis hendrerit dolor magna eget est. Turpis egestas maecenas pharetra convallis. Sem nulla pharetra diam sit amet. Diam volutpat commodo sed egestas egestas fringilla. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Ornare massa eget egestas purus viverra accumsan in.
+
+-   Vulputate eu scelerisque felis imperdiet proin.
+-   Euismod nisi porta lorem mollis aliquam.
+-   Urna molestie at elementum eu facilisis sed odio morbi quis.
+-   Convallis a cras semper auctor neque. Semper quis lectus nulla at volutpat diam ut venenatis tellus.
+
+## Tentative topics
+
+| Week | Lecture topics | Lab topics |
+|------|----------------|------------|
+| 1    | Topics         | Topics     |
+| 2    | Topics         | Topics     |
+| 3    | Topics         | Topics     |
+| 4    | Topics         | Topics     |
+| 5    | Topics         | Topics     |
+
+## Course requirements
+
+### Computing
+
+-   Minimum device requirements
+
+-   Software requirements
+
+-   Account requirements
+
+### Textbook 
+
+-   Required textbook / information
+
+### Other requirements
+
+-   Anything else

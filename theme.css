@@ -67,9 +67,9 @@ d-appendix {
 /* These properties only apply to Distill sites and blogs  */
 
 .distill-site-header {
-  --title-size:       18px;
+  --title-size:       20px;
   --text-color:       rgba(255, 255, 255, 0.8);
-  --text-size:        15px;
+  --text-size:        16px;
   --hover-color:      white;
   --bkgd-color:       #003660;
 }
@@ -84,17 +84,9 @@ d-appendix {
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below                      */
 
-d-article h1 {
-    grid-column: text;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 1.1em;
-    margin: 0 0 0.5rem;
-}
-
 d-article h2 {
     grid-column: text;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 400;
     line-height: 1.1em;
     margin: 0 0 0.5rem;
@@ -102,7 +94,7 @@ d-article h2 {
 
 d-article h3 {
     grid-column: text;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 1.1em;
     margin: 0 0 0.5rem;
@@ -120,6 +112,7 @@ d-title h1 {
     margin: 0 0 0.5rem;
 }
 
+/* Set colors for headers */
 d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article h6 {
     color: rgba(4, 124, 145, 0.8);
 }
@@ -131,4 +124,10 @@ table {
 
 code {
   font-family: Roboto Mono;
+}
+
+.distill-site-header a, .distill-site-header .title {
+    display: inline-block;
+    text-align: left;
+    padding: 14px 14px 14px 14px;
 }

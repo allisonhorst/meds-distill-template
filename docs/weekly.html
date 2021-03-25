@@ -85,29 +85,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>EDS 123: About this site</title>
+  <title>EDS 123: Weekly materials</title>
 
-  <meta property="description" itemprop="description" content="Some additional details about the website"/>
+  <meta property="description" itemprop="description" content="Weekly lecture, lab and reading materials"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="EDS 123: About this site"/>
+  <meta property="og:title" content="EDS 123: Weekly materials"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Some additional details about the website"/>
+  <meta property="og:description" content="Weekly lecture, lab and reading materials"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="EDS 123"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="EDS 123: About this site"/>
-  <meta property="twitter:description" content="Some additional details about the website"/>
+  <meta property="twitter:title" content="EDS 123: Weekly materials"/>
+  <meta property="twitter:description" content="Weekly lecture, lab and reading materials"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["About this site"]},{"type":"character","attributes":{},"value":["Some additional details about the website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Weekly materials"]},{"type":"character","attributes":{},"value":["Weekly lecture, lab and reading materials"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2178,9 +2178,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* These properties only apply to Distill sites and blogs  */
 
   .distill-site-header {
-    --title-size:       18px;
+    --title-size:       20px;
     --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        15px;
+    --text-size:        16px;
     --hover-color:      white;
     --bkgd-color:       #003660;
   }
@@ -2195,17 +2195,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below                      */
 
-  d-article h1 {
-      grid-column: text;
-      font-size: 35px;
-      font-weight: 400;
-      line-height: 1.1em;
-      margin: 0 0 0.5rem;
-  }
-
   d-article h2 {
       grid-column: text;
-      font-size: 30px;
+      font-size: 32px;
       font-weight: 400;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
@@ -2213,7 +2205,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   d-article h3 {
       grid-column: text;
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 400;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
@@ -2231,6 +2223,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       margin: 0 0 0.5rem;
   }
 
+  /* Set colors for headers */
   d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article h6 {
       color: rgba(4, 124, 145, 0.8);
   }
@@ -2242,6 +2235,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   code {
     font-family: Roboto Mono;
+  }
+
+  .distill-site-header a, .distill-site-header .title {
+      display: inline-block;
+      text-align: left;
+      padding: 14px 14px 14px 14px;
   }</style>
   <style type="text/css">
   /* base style */
@@ -2418,7 +2417,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"About this site","description":"Some additional details about the website","authors":[]}
+{"title":"Weekly materials","description":"Weekly lecture, lab and reading materials","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2429,8 +2428,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="index.html" class="title">EDS 123</a>
 </div>
 <div class="nav-right">
-<a href="index.html">HOME</a>
-<a href="about.html">ABOUT</a>
+<a href="index.html">Home</a>
+<a href="weekly.html">Weekly materials</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2440,19 +2439,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>About this site</h1>
+<h1>Weekly materials</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Some additional details about the website</p></p>
+<p><p>Weekly lecture, lab and reading materials</p></p>
 </div>
 
 
 <div class="d-article">
-<h2 id="level-2-header">Level 2 header</h2>
-<h3 id="level-3-header">Level 3 header</h3>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="about_files/figure-html5/unnamed-chunk-1-1.png" width="624" /></p>
-</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

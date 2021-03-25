@@ -1,0 +1,11 @@
+---
+title: "Weekly materials"
+description: |
+  Weekly lecture, lab and reading materials
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
