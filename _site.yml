@@ -9,6 +9,10 @@ navbar:
       href: index.html
     - text: "Weekly materials"
       href: weekly.html
+    - text: "Resources"
+      href: resources.html
+    - icon: fab fa-github
+      href: https://github.com/allisonhorst/meds-distill-template
 output:
   distill::distill_article:
     toc: true
@@ -16,3 +20,5 @@ output:
 theme: theme.css
 
 # To remove table of contents on each page, set toc: and toc_float: lines to FALSE
+
+# To add or remove pages, create .Rmd (in root), add information (in the navbar), then build.

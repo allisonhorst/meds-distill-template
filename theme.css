@@ -11,12 +11,12 @@
 /* Optional: embed custom fonts here with `@import`          */
 /* This must remain at the top of this file.                 */
 
-/* Font options: Aleo (serif), Lexend (sans-serif) */
-@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400&family=Lexend&display=swap');
+/* Font options: Aleo (headers / serif), Nunito Sans (body / sans-serif) */
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
 
-/* Code font options */
+/* Code font (Roboto Mono) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
 
 html {
@@ -69,7 +69,7 @@ d-appendix {
 .distill-site-header {
   --title-size:       20px;
   --text-color:       rgba(255, 255, 255, 0.8);
-  --text-size:        16px;
+  --text-size:        18px;
   --hover-color:      white;
   --bkgd-color:       #003660;
 }
