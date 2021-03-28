@@ -1,6 +1,6 @@
 ---
 title: "EDS 123: An optional course template"
-description: "A minimal website skeleton and theme"
+description: "A minimal website skeleton and theme for MEDS course with distill (by RStudio)"
 site: distill::distill_website
 ---
 
