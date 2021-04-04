@@ -11,8 +11,8 @@
 /* Optional: embed custom fonts here with `@import`          */
 /* This must remain at the top of this file.                 */
 
-/* Font options: Aleo (headers / serif), Nunito Sans (body / sans-serif) */
-@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400&display=swap');
+/* Font options: Sanchez (headers / serif), Nunito Sans (body / sans-serif) */
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
 
@@ -35,7 +35,7 @@ html {
   --aside-color:     rgba(0, 0, 0, 0.6);
   --fig-cap-color:   rgba(0, 0, 0, 0.6);
   /*-- Specify custom fonts ~~~ must be imported above   --*/
-  --heading-font:    Aleo;
+  --heading-font:    Sanchez;
   --mono-font:       Roboto Mono;
   --body-font:       Nunito Sans;
   --navbar-font:     Nunito Sans;  /* websites + blogs only */
