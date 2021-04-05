@@ -2135,7 +2135,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   html {
     /*-- Main font sizes --*/
-    --title-size:      40px;
+    --title-size:      50px;
     --title-weight:    400;
     --body-size:       1.06rem;
     --code-size:       14px;
@@ -2143,7 +2143,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --fig-cap-size:    13px;
     /*-- Main font colors --*/
     --title-color:     #003660;
-    --title-weight:    550;
+    --title-weight:    400;
     --header-color:    rgba(4, 124, 145, 1);
     --body-color:      rgba(0, 0, 0, 0.8);
     --aside-color:     rgba(0, 0, 0, 0.6);
@@ -2198,10 +2198,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below                      */
 
-  /* d-article h2 {
+  d-article h2 {
       grid-column: text;
       font-size: 32px;
-      font-weight: 400;
+      font-weight: 200;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
   }
@@ -2215,25 +2215,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
   a.title {
-    font-weight: 600;
+    font-style: bold;
   }
 
-  d-title h1 {
-      grid-column: text;
-      font-size: 45px;
-      font-weight: 550;
-      line-height: 1.1em;
-      margin: 0 0 0.5rem;
-  } */
+  a, .nav-dropdown .nav-dropbtn {
+    font-weight: 500;
+  }
 
   /* Set colors for headers */
-  /*d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article h6 {
+  d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article h6 {
       color: rgba(4, 124, 145, 0.8);
-  }*/
+  }
 
-  /* Font for tables (can update here or individually) */
-  /*table {
+  /* Formatting tables (can update here or individually) */
+  table, td, tr, th {
+    border-collapse: collapse;
     font-family: Nunito Sans;
+    border: 1px solid gainsboro;
+    vertical-align: top;
   }
 
   code {
@@ -2244,7 +2243,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       display: inline-block;
       text-align: left;
       padding: 14px 14px 14px 14px;
-  } */</style>
+  }
+
+  d-title h1 {
+      grid-column: text;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 1.1em;
+      margin: 0 0 0.5rem;
+  }
+
+  /* Update toc list font */
+  .d-contents nav ul li {
+      font-size: 20px;
+  }</style>
   <style type="text/css">
   /* base style */
 
@@ -2429,11 +2441,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
 <a href="index.html" class="title">EDS 123</a>
+<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
 <a href="index.html">Home</a>
-<a href="weekly.html">Weekly materials</a>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+Weekly materials
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
+<a href="week_1.html">Week 1</a>
+<a href="week_2.html">Week 2</a>
+<a href="week_3.html">Week 3</a>
+</div>
+</div>
 <a href="resources.html">Resources</a>
+<a href="blog.html">Blog</a>
 <a href="https://github.com/allisonhorst/meds-distill-template">
 <i class="fab fa-github" aria-hidden="true"></i>
 </a>
@@ -2573,9 +2598,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
 <p>
-  <a href="https://bren.ucsb.edu/">
-    <img src="img/bren_white_logo.png" alt="Bren School logo" width="350">
-  </a>
+<a href="https://bren.ucsb.edu/"><img src="img/bren_white_logo.png" alt="Bren School logo" style="width:350px;" /></a>
 </p>
 <p>
   This website was made with <u><a href="https://rstudio.github.io/distill/">distill by RStudio</a></u>.

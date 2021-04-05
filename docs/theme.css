@@ -21,7 +21,7 @@
 
 html {
   /*-- Main font sizes --*/
-  --title-size:      40px;
+  --title-size:      50px;
   --title-weight:    400;
   --body-size:       1.06rem;
   --code-size:       14px;
@@ -29,7 +29,7 @@ html {
   --fig-cap-size:    13px;
   /*-- Main font colors --*/
   --title-color:     #003660;
-  --title-weight:    550;
+  --title-weight:    400;
   --header-color:    rgba(4, 124, 145, 1);
   --body-color:      rgba(0, 0, 0, 0.8);
   --aside-color:     rgba(0, 0, 0, 0.6);
@@ -84,10 +84,10 @@ d-appendix {
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below                      */
 
-/* d-article h2 {
+d-article h2 {
     grid-column: text;
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 1.1em;
     margin: 0 0 0.5rem;
 }
@@ -101,25 +101,24 @@ d-article h3 {
 }
 
 a.title {
-  font-weight: 600;
+  font-style: bold;
 }
 
-d-title h1 {
-    grid-column: text;
-    font-size: 45px;
-    font-weight: 550;
-    line-height: 1.1em;
-    margin: 0 0 0.5rem;
-} */
+a, .nav-dropdown .nav-dropbtn {
+  font-weight: 500;
+}
 
 /* Set colors for headers */
-/*d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article h6 {
+d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article h6 {
     color: rgba(4, 124, 145, 0.8);
-}*/
+}
 
-/* Font for tables (can update here or individually) */
-/*table {
+/* Formatting tables (can update here or individually) */
+table, td, tr, th {
+  border-collapse: collapse;
   font-family: Nunito Sans;
+  border: 1px solid gainsboro;
+  vertical-align: top;
 }
 
 code {
@@ -130,4 +129,17 @@ code {
     display: inline-block;
     text-align: left;
     padding: 14px 14px 14px 14px;
-} */
+}
+
+d-title h1 {
+    grid-column: text;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+}
+
+/* Update toc list font */
+.d-contents nav ul li {
+    font-size: 20px;
+}

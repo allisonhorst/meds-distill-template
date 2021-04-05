@@ -8,9 +8,17 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "Weekly materials"
-      href: weekly.html
+      menu:
+        - text: "Week 1"
+          href: week_1.html
+        - text: "Week 2"
+          href: week_2.html
+        - text: "Week 3"
+          href: week_3.html
     - text: "Resources"
       href: resources.html
+    - text: "Blog"
+      href: blog.html
     - icon: fab fa-github
       href: https://github.com/allisonhorst/meds-distill-template
 output:
