@@ -6,6 +6,8 @@ title: "Course resources"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+<p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>resources.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
+
 ### Getting started with `distill`
 
 -   RStudio's [`distill` website](https://rstudio.github.io/distill/)

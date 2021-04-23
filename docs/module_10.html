@@ -85,26 +85,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>EDS 123: Week 3</title>
+  <title>EDS 123: Module 10: Inserting tables</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="EDS 123: Week 3"/>
+  <meta property="og:title" content="EDS 123: Module 10: Inserting tables"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="EDS 123"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="EDS 123: Week 3"/>
+  <meta property="twitter:title" content="EDS 123: Module 10: Inserting tables"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Week 3"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Module 10: Inserting tables"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2122,9 +2122,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* Optional: embed custom fonts here with `@import`          */
   /* This must remain at the top of this file.                 */
 
-  /* Font options: Sanchez (headers / serif), Nunito Sans (body / sans-serif) */
+  /* Header font */
   @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
 
+  /* Body font */
   @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
 
   /* Code font (Roboto Mono) */
@@ -2182,7 +2183,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --text-color:       rgba(255, 255, 255, 0.8);
     --text-size:        18px;
     --hover-color:      white;
-    --bkgd-color:       #003660;
+    --bkgd-color:       #047C91;
   }
 
   .distill-site-footer {
@@ -2198,15 +2199,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article h2 {
       grid-column: text;
       font-size: 32px;
-      font-weight: 200;
+      font-weight: 300;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
+      padding-top: 20px;
   }
 
   d-article h3 {
       grid-column: text;
       font-size: 24px;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
   }
@@ -2232,6 +2234,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     vertical-align: top;
   }
 
+  d-article table th, d-article table td {
+      font-size: 15px;
+      padding: 2px 8px;
+      border: 1px solid gainsboro;
+  }
+
+  /* Code style formatting of text */
   code {
     font-family: Roboto Mono;
   }
@@ -2252,7 +2261,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* Update toc list font */
   .d-contents nav ul li {
       font-size: 20px;
-  }</style>
+  }
+
+  /* Update overall layout (body width) */
+  @media(min-width: 1180px) {
+      .base-grid,
+      distill-header,
+      d-title,
+      d-abstract,
+      d-article,
+      d-appendix,
+      distill-appendix,
+      d-byline,
+      d-footnote-list,
+      d-citation-list,
+      distill-footer {
+        grid-template-columns: [screen-start] 0.5fr [page-start kicker-start] 30px [middle-start] 50px [text-start kicker-end] 90px 90px 90px 90px 90px 90px 90px 90px [text-end gutter-start] 30px [middle-end] 50px [page-end gutter-end] 0.5fr [screen-end];
+        grid-column-gap: 20px;
+      }
+
+  /* Change navbar dropdown menu bg color */
+  .nav-dropdown-content a:hover {
+      background-color: #003660;
+      color: black;
+  }
+  </style>
   <style type="text/css">
   /* base style */
 
@@ -2428,7 +2461,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Week 3","authors":[]}
+{"title":"Module 10: Inserting tables","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2437,24 +2470,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
 <a href="index.html" class="title">EDS 123</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
 <a href="index.html">Home</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
-Weekly materials
+Modules
  
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="week_1.html">Week 1</a>
-<a href="week_2.html">Week 2</a>
-<a href="week_3.html">Week 3</a>
+<a href="module_1.html">Module 1: Add a new site page</a>
+<a href="module_2.html">Module 2: Update site title &amp; subtitle</a>
+<a href="module_3.html">Module 3: Add images</a>
+<a href="module_4.html">Module 4: Change the theme</a>
+<a href="module_5.html">Module 5: Basic formatting</a>
+<a href="module_6.html">Module 6: Internal &amp; external links</a>
+<a href="module_7.html">Module 7: Remove tables of contents</a>
+<a href="module_8.html">Module 8: Add a dropdown menu from navigation bar item</a>
+<a href="module_9.html">Module 9: Change site fonts</a>
+<a href="module_10.html">Module 10: Add a table</a>
 </div>
 </div>
+<a href="assignments.html">Assignments</a>
 <a href="resources.html">Resources</a>
-<a href="blog.html">Blog</a>
 <a href="https://github.com/allisonhorst/meds-distill-template">
 <i class="fab fa-github" aria-hidden="true"></i>
 </a>
@@ -2467,7 +2506,7 @@ Weekly materials
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Week 3</h1>
+<h1>Module 10: Inserting tables</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2475,7 +2514,28 @@ Weekly materials
 
 
 <div class="d-article">
-<p>Week 3 materials…</p>
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#use-the-visual-editor">Use the Visual Editor</a></li>
+<li><a href="#other-options">Other options</a></li>
+</ul>
+</nav>
+</div>
+<p style="color: #ba5e00">
+<p><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>module_10.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
+</p>
+<h2 id="use-the-visual-editor">Use the Visual Editor</h2>
+<p>If you want to create a table in your R Markdown from scratch that is easily editable (e.g., a table of Assignment due dates or something), it might be easiest to just make the thing manually right in your R Markdown document.</p>
+<p>To do that, I strongly recommend using the RStudio Visual Editor (in RStudio versions &gt;= 1.4), which has an easy-to-use Table maker similar to what you’d see in Word or Google Docs.</p>
+<ol type="1">
+<li>Open the .Rmd in which you want to add the table</li>
+<li>Switch over to the visual editor by clicking on the compass-looking icon in the top right of your .Rmd screen, to the right of the ‘Run’ and ‘Publish’ buttons (hover text is “Switch to visual markdown editor”)</li>
+<li>In the Visual Editor menu, click on Table, then in the dropdown Menu click ‘Insert Table’…and create &amp; populate your new table like you would normally in non-markdown tools</li>
+</ol>
+<h2 id="other-options">Other options</h2>
+<p>There are a bunch of different ways to add &amp; format tables in R Markdown (see several of <em>many</em> options in David Keyes’ post on <a href="https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/">Making Beautiful Tables in R</a>). I think most of them are most useful when you’re trying to make a finalized table with data in it, but if you really want to beautify your website tables there are options.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

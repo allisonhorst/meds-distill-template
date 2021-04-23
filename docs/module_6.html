@@ -85,26 +85,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>EDS 123: Blog</title>
+  <title>EDS 123: Module 6: Internal &amp; external links</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="EDS 123: Blog"/>
+  <meta property="og:title" content="EDS 123: Module 6: Internal &amp; external links"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="EDS 123"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="EDS 123: Blog"/>
+  <meta property="twitter:title" content="EDS 123: Module 6: Internal &amp; external links"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","listing"]}},"value":[{"type":"character","attributes":{},"value":["Blog"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Module 6: Internal & external links"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2122,9 +2122,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* Optional: embed custom fonts here with `@import`          */
   /* This must remain at the top of this file.                 */
 
-  /* Font options: Sanchez (headers / serif), Nunito Sans (body / sans-serif) */
+  /* Header font */
   @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
 
+  /* Body font */
   @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
 
   /* Code font (Roboto Mono) */
@@ -2182,7 +2183,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --text-color:       rgba(255, 255, 255, 0.8);
     --text-size:        18px;
     --hover-color:      white;
-    --bkgd-color:       #003660;
+    --bkgd-color:       #047C91;
   }
 
   .distill-site-footer {
@@ -2198,15 +2199,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article h2 {
       grid-column: text;
       font-size: 32px;
-      font-weight: 200;
+      font-weight: 300;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
+      padding-top: 20px;
   }
 
   d-article h3 {
       grid-column: text;
       font-size: 24px;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
   }
@@ -2232,6 +2234,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     vertical-align: top;
   }
 
+  d-article table th, d-article table td {
+      font-size: 15px;
+      padding: 2px 8px;
+      border: 1px solid gainsboro;
+  }
+
+  /* Code style formatting of text */
   code {
     font-family: Roboto Mono;
   }
@@ -2252,7 +2261,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* Update toc list font */
   .d-contents nav ul li {
       font-size: 20px;
-  }</style>
+  }
+
+  /* Update overall layout (body width) */
+  @media(min-width: 1180px) {
+      .base-grid,
+      distill-header,
+      d-title,
+      d-abstract,
+      d-article,
+      d-appendix,
+      distill-appendix,
+      d-byline,
+      d-footnote-list,
+      d-citation-list,
+      distill-footer {
+        grid-template-columns: [screen-start] 0.5fr [page-start kicker-start] 30px [middle-start] 50px [text-start kicker-end] 90px 90px 90px 90px 90px 90px 90px 90px [text-end gutter-start] 30px [middle-end] 50px [page-end gutter-end] 0.5fr [screen-end];
+        grid-column-gap: 20px;
+      }
+
+  /* Change navbar dropdown menu bg color */
+  .nav-dropdown-content a:hover {
+      background-color: #003660;
+      color: black;
+  }
+  </style>
   <style type="text/css">
   /* base style */
 
@@ -2423,12 +2456,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Blog","authors":[]}
+{"title":"Module 6: Internal & external links","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2437,24 +2470,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
 <a href="index.html" class="title">EDS 123</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
 <a href="index.html">Home</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
-Weekly materials
+Modules
  
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="week_1.html">Week 1</a>
-<a href="week_2.html">Week 2</a>
-<a href="week_3.html">Week 3</a>
+<a href="module_1.html">Module 1: Add a new site page</a>
+<a href="module_2.html">Module 2: Update site title &amp; subtitle</a>
+<a href="module_3.html">Module 3: Add images</a>
+<a href="module_4.html">Module 4: Change the theme</a>
+<a href="module_5.html">Module 5: Basic formatting</a>
+<a href="module_6.html">Module 6: Internal &amp; external links</a>
+<a href="module_7.html">Module 7: Remove tables of contents</a>
+<a href="module_8.html">Module 8: Add a dropdown menu from navigation bar item</a>
+<a href="module_9.html">Module 9: Change site fonts</a>
+<a href="module_10.html">Module 10: Add a table</a>
 </div>
 </div>
+<a href="assignments.html">Assignments</a>
 <a href="resources.html">Resources</a>
-<a href="blog.html">Blog</a>
 <a href="https://github.com/allisonhorst/meds-distill-template">
 <i class="fab fa-github" aria-hidden="true"></i>
 </a>
@@ -2465,168 +2504,9 @@ Weekly materials
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      page_category = decodeURIComponent(page_category)
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-apply-limit l-page">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Blog">Blog</h1>
-<a href="posts/2021-04-04-welcome/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">April 4, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Allison Horst</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Adding blog posts</h2>
-<div class="dt-tags"></div>
-<p>Add blog posts with distill::create_post()</p>
-</div>
-</a>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Blog</h1>
+<h1>Module 6: Internal &amp; external links</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2634,7 +2514,31 @@ function init_posts_list() {
 
 
 <div class="d-article">
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#linking-to-internal-parts-of-your-site">Linking to internal parts of your site</a></li>
+<li><a href="#external-links">External links</a></li>
+</ul>
+</nav>
+</div>
+<p style="color: #ba5e00">
+<b>TO UPDATE THIS PAGE:</b> Open and edit the <b>module_6.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!
+</p>
+<h2 id="linking-to-internal-parts-of-your-site">Linking to internal parts of your site</h2>
+<p>Sometimes you’ll want to have a link to another page <em>in your website</em>. How? Use the format <code>[text](link_to_this_page.html)</code>.</p>
+<p>For example, if I want to link here to the Resources page, within my .Rmd that looks like this:</p>
+<pre><code>  Find more resources [here](resources.html). </code></pre>
+<p>Which, when built, looks like this:</p>
+<p>Find more resources <a href="resources.html">here</a>.</p>
+<h2 id="external-links">External links</h2>
+<p>Same thing, just add the full URL within the parentheses. For example, to link to UCSB’s home page that would look like:</p>
+<pre><code>  Learn more about [UCSB](https://www.ucsb.edu/).
+  </code></pre>
+<p>Which when built looks like this:</p>
+<p>Learn more about <a href="https://www.ucsb.edu/">UCSB</a>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

@@ -7,18 +7,32 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "Weekly materials"
+    - text: "Modules"
       menu:
-        - text: "Week 1"
-          href: week_1.html
-        - text: "Week 2"
-          href: week_2.html
-        - text: "Week 3"
-          href: week_3.html
+        - text: "Module 1: Add a new site page"
+          href: module_1.html
+        - text: "Module 2: Update site title & subtitle"
+          href: module_2.html
+        - text: "Module 3: Add images"
+          href: module_3.html
+        - text: "Module 4: Change the theme"
+          href: module_4.html
+        - text: "Module 5: Basic formatting"
+          href: module_5.html
+        - text: "Module 6: Internal & external links"
+          href: module_6.html
+        - text: "Module 7: Remove tables of contents"
+          href: module_7.html
+        - text: "Module 8: Add a dropdown menu from navigation bar item"
+          href: module_8.html
+        - text: "Module 9: Change site fonts"
+          href: module_9.html
+        - text: "Module 10: Add a table"
+          href: module_10.html
+    - text: "Assignments"
+      href: assignments.html
     - text: "Resources"
       href: resources.html
-    - text: "Blog"
-      href: blog.html
     - icon: fab fa-github
       href: https://github.com/allisonhorst/meds-distill-template
 output:
@@ -27,6 +41,6 @@ output:
     toc_float: true
 theme: theme.css
 
-# To remove table of contents on each page, set toc: and toc_float: lines to FALSE
+# To remove table of contents on each page, set toc: and toc_float: lines to false
 
-# To add or remove pages, create .Rmd (in root), add information (in the navbar), then build.
+# To add or remove pages, create .Rmd (in root), add information (in the navbar) for the .html that is created from it, then build.
