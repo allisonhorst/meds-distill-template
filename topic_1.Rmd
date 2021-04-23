@@ -1,16 +1,24 @@
 ---
-title: "Module 1: Add/remove a site page"
+title: "Topic 1: Add/remove a site page"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**NOTE:** There are 10 toy module sections here, expecting that some teachers may want to have one page per week. You are encouraged to structure your course however you want - e.g. all of your course information could be on a single page, or you might have a different number of topics, or organize weekly.
+**NOTE:** There are 10 toy Topic sections here, expecting that some teachers may want to have one page per week (for a 10 week course). You are encouraged to structure your course **however works best for your class**. All of your course information could be on a single page, or you might have a different number of topics, or organize weekly, or any other organization that works for you.
 
-<p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>module_1.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
+<p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>topic_1.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
 
 ## Add a site page
+
+### The quick version: 
+
+- Make a new R Markdown document, save
+- Add the rendered .html to _site.yaml so the page exists on the site
+- Build to see updated site
+
+Below for a bit more detail...
 
 ### Make each page an R Markdown document
 
@@ -44,4 +52,5 @@ Take a look at some other pages in this template (Resources, Assignments, etc.) 
 ## Delete/disappear a site page
 
 The safest thing to do if you don't want a page to *show up* is to remove it from the `_site.yml` navbar listings. That way, the material on the page still exists as a file in your project, but doesn't show up on the website -- don't delete a page file unless you are REALLY SURE that you're never going to want the material on that page ever again.
+
 

@@ -1,8 +1,8 @@
 ---
-title: "Module 8: Dropdown list from a navigation bar item"
+title: "Topic 8: Dropdown list from a navigation bar item"
 ---
 
-<p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>module_8.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
+<p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>topic_8.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
 
 If you look at this template, you'll notice that some navigation bar items go directly to a single page, while the Modules item takes you to a dropdown menu. 
 

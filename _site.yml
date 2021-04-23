@@ -7,28 +7,28 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "Modules"
+    - text: "Topics"
       menu:
-        - text: "Module 1: Add a new site page"
-          href: module_1.html
-        - text: "Module 2: Update site title & subtitle"
-          href: module_2.html
-        - text: "Module 3: Add images"
-          href: module_3.html
-        - text: "Module 4: Change the theme"
-          href: module_4.html
-        - text: "Module 5: Basic formatting"
-          href: module_5.html
-        - text: "Module 6: Internal & external links"
-          href: module_6.html
-        - text: "Module 7: Remove tables of contents"
-          href: module_7.html
-        - text: "Module 8: Add a dropdown menu from navigation bar item"
-          href: module_8.html
-        - text: "Module 9: Change site fonts"
-          href: module_9.html
-        - text: "Module 10: Add a table"
-          href: module_10.html
+        - text: "Topic 1: Add a new site page"
+          href: topic_1.html
+        - text: "Topic 2: Update site title & subtitle"
+          href: topic_2.html
+        - text: "Topic 3: Add images"
+          href: topic_3.html
+        - text: "Topic 4: Change the theme"
+          href: topic_4.html
+        - text: "Topic 5: Basic formatting"
+          href: topic_5.html
+        - text: "Topic 6: Internal & external links"
+          href: topic_6.html
+        - text: "Topic 7: Remove tables of contents"
+          href: topic_7.html
+        - text: "Topic 8: Add a dropdown menu from navigation bar item"
+          href: topic_8.html
+        - text: "Topic 9: Change site fonts"
+          href: topic_9.html
+        - text: "Topic 10: Add a table"
+          href: topic_10.html
     - text: "Assignments"
       href: assignments.html
     - text: "Resources"

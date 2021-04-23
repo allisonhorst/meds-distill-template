@@ -85,26 +85,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>EDS 123: Module 1: Add/remove a site page</title>
+  <title>EDS 123: Topic 1: Add/remove a site page</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="EDS 123: Module 1: Add/remove a site page"/>
+  <meta property="og:title" content="EDS 123: Topic 1: Add/remove a site page"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="EDS 123"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="EDS 123: Module 1: Add/remove a site page"/>
+  <meta property="twitter:title" content="EDS 123: Topic 1: Add/remove a site page"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Module 1: Add/remove a site page"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Topic 1: Add/remove a site page"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2461,7 +2461,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Module 1: Add/remove a site page","authors":[]}
+{"title":"Topic 1: Add/remove a site page","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2475,21 +2475,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="index.html">Home</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
-Modules
+Topics
  
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="module_1.html">Module 1: Add a new site page</a>
-<a href="module_2.html">Module 2: Update site title &amp; subtitle</a>
-<a href="module_3.html">Module 3: Add images</a>
-<a href="module_4.html">Module 4: Change the theme</a>
-<a href="module_5.html">Module 5: Basic formatting</a>
-<a href="module_6.html">Module 6: Internal &amp; external links</a>
-<a href="module_7.html">Module 7: Remove tables of contents</a>
-<a href="module_8.html">Module 8: Add a dropdown menu from navigation bar item</a>
-<a href="module_9.html">Module 9: Change site fonts</a>
-<a href="module_10.html">Module 10: Add a table</a>
+<a href="topic_1.html">Topic 1: Add a new site page</a>
+<a href="topic_2.html">Topic 2: Update site title &amp; subtitle</a>
+<a href="topic_3.html">Topic 3: Add images</a>
+<a href="topic_4.html">Topic 4: Change the theme</a>
+<a href="topic_5.html">Topic 5: Basic formatting</a>
+<a href="topic_6.html">Topic 6: Internal &amp; external links</a>
+<a href="topic_7.html">Topic 7: Remove tables of contents</a>
+<a href="topic_8.html">Topic 8: Add a dropdown menu from navigation bar item</a>
+<a href="topic_9.html">Topic 9: Change site fonts</a>
+<a href="topic_10.html">Topic 10: Add a table</a>
 </div>
 </div>
 <a href="assignments.html">Assignments</a>
@@ -2506,7 +2506,7 @@ Modules
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Module 1: Add/remove a site page</h1>
+<h1>Topic 1: Add/remove a site page</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2520,6 +2520,7 @@ Modules
 <ul>
 <li><a href="#add-a-site-page">Add a site page</a>
 <ul>
+<li><a href="#the-quick-version">The quick version:</a></li>
 <li><a href="#make-each-page-an-r-markdown-document">Make each page an R Markdown document</a></li>
 <li><a href="#add-it-to-your-navigation-bar">Add it to your navigation bar</a></li>
 </ul></li>
@@ -2527,11 +2528,18 @@ Modules
 </ul>
 </nav>
 </div>
-<p><strong>NOTE:</strong> There are 10 toy module sections here, expecting that some teachers may want to have one page per week. You are encouraged to structure your course however you want - e.g. all of your course information could be on a single page, or you might have a different number of topics, or organize weekly.</p>
+<p><strong>NOTE:</strong> There are 10 toy Topic sections here, expecting that some teachers may want to have one page per week (for a 10 week course). You are encouraged to structure your course <strong>however works best for your class</strong>. All of your course information could be on a single page, or you might have a different number of topics, or organize weekly, or any other organization that works for you.</p>
 <p style="color: #ba5e00">
-<b>TO UPDATE THIS PAGE:</b> Open and edit the <b>module_1.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!
+<b>TO UPDATE THIS PAGE:</b> Open and edit the <b>topic_1.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!
 </p>
 <h2 id="add-a-site-page">Add a site page</h2>
+<h3 id="the-quick-version">The quick version:</h3>
+<ul>
+<li>Make a new R Markdown document, save</li>
+<li>Add the rendered .html to _site.yaml so the page exists on the site</li>
+<li>Build to see updated site</li>
+</ul>
+<p>Below for a bit more detail…</p>
 <h3 id="make-each-page-an-r-markdown-document">Make each page an R Markdown document</h3>
 <p>To make a new page:</p>
 <ol type="1">

@@ -1,8 +1,8 @@
 ---
-title: "Module 5: Basic formatting"
+title: "Topic 5: Basic formatting"
 ---
 
-<p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>module_5.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
+<p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>topic_5.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
 
 If you're familiar with markdown, use standard syntax to update font styles, add bulleted lists, subscripts/superscripts, etc. (or learn more from the [R Markdown cheatsheet](https://www.rstudio.org/links/r_markdown_cheat_sheet)). 
 

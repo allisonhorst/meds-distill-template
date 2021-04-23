@@ -85,26 +85,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>EDS 123: Module 4: Change the theme</title>
+  <title>EDS 123: Topic 8: Dropdown list from a navigation bar item</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="EDS 123: Module 4: Change the theme"/>
+  <meta property="og:title" content="EDS 123: Topic 8: Dropdown list from a navigation bar item"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="EDS 123"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="EDS 123: Module 4: Change the theme"/>
+  <meta property="twitter:title" content="EDS 123: Topic 8: Dropdown list from a navigation bar item"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Module 4: Change the theme"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Topic 8: Dropdown list from a navigation bar item"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2461,7 +2461,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Module 4: Change the theme","authors":[]}
+{"title":"Topic 8: Dropdown list from a navigation bar item","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2475,21 +2475,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="index.html">Home</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
-Modules
+Topics
  
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="module_1.html">Module 1: Add a new site page</a>
-<a href="module_2.html">Module 2: Update site title &amp; subtitle</a>
-<a href="module_3.html">Module 3: Add images</a>
-<a href="module_4.html">Module 4: Change the theme</a>
-<a href="module_5.html">Module 5: Basic formatting</a>
-<a href="module_6.html">Module 6: Internal &amp; external links</a>
-<a href="module_7.html">Module 7: Remove tables of contents</a>
-<a href="module_8.html">Module 8: Add a dropdown menu from navigation bar item</a>
-<a href="module_9.html">Module 9: Change site fonts</a>
-<a href="module_10.html">Module 10: Add a table</a>
+<a href="topic_1.html">Topic 1: Add a new site page</a>
+<a href="topic_2.html">Topic 2: Update site title &amp; subtitle</a>
+<a href="topic_3.html">Topic 3: Add images</a>
+<a href="topic_4.html">Topic 4: Change the theme</a>
+<a href="topic_5.html">Topic 5: Basic formatting</a>
+<a href="topic_6.html">Topic 6: Internal &amp; external links</a>
+<a href="topic_7.html">Topic 7: Remove tables of contents</a>
+<a href="topic_8.html">Topic 8: Add a dropdown menu from navigation bar item</a>
+<a href="topic_9.html">Topic 9: Change site fonts</a>
+<a href="topic_10.html">Topic 10: Add a table</a>
 </div>
 </div>
 <a href="assignments.html">Assignments</a>
@@ -2506,7 +2506,7 @@ Modules
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Module 4: Change the theme</h1>
+<h1>Topic 8: Dropdown list from a navigation bar item</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2515,12 +2515,22 @@ Modules
 
 <div class="d-article">
 <p style="color: #ba5e00">
-<b>TO UPDATE THIS PAGE:</b> Open and edit the <b>module_4.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!
+<b>TO UPDATE THIS PAGE:</b> Open and edit the <b>topic_8.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!
 </p>
-<p>The bells and whistles of this MEDS template (colors, fonts, spacing, etc.) are customized in the <code>theme.css</code> file in your Project root.</p>
-<p>If you love css or want to make changes, you’re encouraged to customize your site! There is minor annotation in the css file, but honestly this will probably just take quite a bit of Inspect Element to figure out what to change.</p>
-<p><strong>Fonts:</strong> If you specifically want to know how to change the site fonts, see <a href="module_9.html">here</a>.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>If you look at this template, you’ll notice that some navigation bar items go directly to a single page, while the Modules item takes you to a dropdown menu.</p>
+<p>To create a dropdown menu of pages:</p>
+<ol type="1">
+<li><p>Create and save the pages as individual R Markdown documents as described <a href="module_1.html">here</a>.</p></li>
+<li><p>Open the <code>_site.yml</code> file. In the <code>navbar</code> section, create a menu with the pages as linked items using a structure like this:</p></li>
+</ol>
+<pre><code>   - text: &quot;Dropdown menu&quot;
+      menu:
+        - text: &quot;First dropdown item&quot;
+          href: item_1.html
+        - text: &quot;Second dropdown item&quot;
+          href: item_2.html</code></pre>
+<p>The example above would only work if the new pages were created as <code>item_1.Rmd</code> and <code>item_2.Rmd</code>, so that when the site is built the rendered <code>item_1.html</code> and <code>item_2.html</code> files exist in the <code>docs</code> output directory.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

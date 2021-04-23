@@ -1,8 +1,8 @@
 ---
-title: "Module 9: Changing site fonts"
+title: "Topic 9: Changing site fonts"
 ---
 
-<p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>module_9.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
+<p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>topic_9.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
 
 You are welcome to use any fonts you want on your website. Here, only using Google fonts is described (there are other methods for downloading fonts and adding, not included here). 
 

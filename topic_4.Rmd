@@ -1,8 +1,8 @@
 ---
-title: "Module 4: Change the theme"
+title: "Topic 4: Change the theme"
 ---
 
-<p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>module_4.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
+<p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>topic_4.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
 
 The bells and whistles of this MEDS template (colors, fonts, spacing, etc.) are customized in the `theme.css` file in your Project root. 
 

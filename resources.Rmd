@@ -8,12 +8,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>resources.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
 
-### Getting started with `distill`
+### More on `distill`
 
 -   RStudio's [`distill` website](https://rstudio.github.io/distill/)
 -   Inspiration and examples from the [distillery](https://distillery.rbind.io/showcase.html)
 
-### Additional resources
-
--   Resource
--   Resource

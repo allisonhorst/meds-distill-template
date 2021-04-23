@@ -1,8 +1,8 @@
 ---
-title: "Module 6: Internal & external links"
+title: "Topic 6: Internal & external links"
 ---
 
-<p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>module_6.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
+<p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>topic_6.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
 
 ## Linking to internal parts of your site
 
